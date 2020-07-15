@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+/*
+Landing page css
+*/
+.back{
+    width: 100%;
+    height: 100vh;
+    /*background-color: rgb(32, 35, 48);*/
+    background-color: black;
+}
+
+#logo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fillcolor 5s ease forwards 9s;
+}
+#start{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: btn 2s ease forwards 8.7s;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: anima 2s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: anima 2s ease forwards 0.5s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;  
+    animation: anima 2s ease forwards 1s;  
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;       
+    animation: anima 2s ease forwards 1.5s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;   
+    animation: anima 2s ease forwards 2.0s;    
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;       
+    animation: anima 2s ease forwards 2.5s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;     
+    animation: anima 2s ease forwards 3.0s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;   
+    animation: anima 2s ease forwards 3.5s;    
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;  
+    animation: anima 2s ease forwards 4s;
+}
+#logo path:nth-child(10){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;  
+    animation: anima 2s ease forwards 4.5s;
+}
+#logo path:nth-child(11){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;  
+    animation: anima 2s ease forwards 5s; 
+}
+#logo path:nth-child(12){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;   
+    animation: anima 2s ease forwards 5.5s;
+}
+#logo path:nth-child(13){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;    
+    animation: anima 2s ease forwards 6s;
+}
+#logo path:nth-child(14){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;      
+    animation: anima 2s ease forwards 6.5s; 
+}
+#logo path:nth-child(15){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;  
+    animation: anima 2s ease forwards 7s;
+}
+#logo path:nth-child(16){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;   
+    animation: anima 2s ease forwards 7.5s;
+}
+#logo path:nth-child(17){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;      
+    animation: anima 2s ease forwards 8s;
+}
+#logo path:nth-child(18){
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;    
+    animation: anima 2s ease forwards 8.5s;
+    
+}
+
+@keyframes anima{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fillcolor{
+    to{
+        fill: white;
+    }
+}
+@keyframes btn{
+    to{
+        opacity: 1;
+    }
+}
+
+
+/*
+TopNav bar Screen
+*/
+
+.navs{
+    border-radius: 10px;
+    /*background-color: #747272;*/
+    background-color: transparent;
+    animation: all 2s ease;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+}
+.logo:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*
+Home Page Screen
+*/
+
+#homepage{
+    height: 100vh;
+    background-image: url('../images/back3.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+.banner{
+    width: 80%;
+    height: 70vh;
+    top: 25%;
+    left: 132px;
+    position: absolute;
+    color: black;
+}
+
+.app-text{
+    width: 50%;
+    float: left;
+    margin-top: 120px;
+}
+
+.app-text h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    font-family: 'Merienda One', cursive;
+}
+.app-text h4{
+    width: 650px;
+    font-size: 25px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+.app-text p{
+    width: 650px;
+    font-size: 20px;
+    margin: 30px 0 30px 0;
+    line-height: 25px;
+    color: #919191;
+    font-family: 'Merienda One', cursive;
+}
+
+.app-picture{
+    width: 50%;
+    float: right;
+    margin-right: -25px;
+    animation: animapic 2s ease infinite;
+}
+.app-picture img{
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
+@keyframes animapic{
+    0%{
+        margin-bottom: 15px;
+    }
+    25%{
+        margin-bottom: 0px;
+    }
+    50%{
+        margin-top: 20px;
+    }
+    75%{
+        margin-bottom: 0px;
+    }
+    100%{
+        margin-bottom: 10px;
+    }
+}
+
+
+.btn1{
+    display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn1:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+.btn1-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  .btn1-warning:hover {
+    color: white;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  
+/*
+Mobile Application
+*/
+
+#mobile{
+    height: 100vh;
+}
+
+.mobile1{
+    width: 80%;
+    height: 70vh;
+    top: 110%;
+    left: 132px;
+    position: absolute;
+    color: black;
+}
+
+.title{
+    width: 50%;
+    float: right;
+}
+
+.title h1{
+    font-size: 43px;
+    margin-top: 50px;
+    width: 640px;
+    position: relative;
+}
+
+.title p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.title1-picture{
+    width: 50%;
+    float: left;
+    animation: animapic 2s ease infinite;
+}
+.title1-picture img{
+    width: 50%;
+    margin-top: 100px;
+}
+
+/*
+Web Application
+*/
+
+#web{
+    height: 100vh;
+}
+
+.web1{
+    width: 80%;
+    height: 70vh;
+    top: 220%;
+    right: 132px;
+    position: absolute;
+    color: black;
+}
+
+.title1{
+    width: 50%;
+    float: right;
+}
+
+.title1 h1{
+    font-size: 43px;
+    margin-top: 50px;
+    width: 640px;
+    position: relative;
+}
+
+.title1 p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.title2-picture{
+    width: 50%;
+    float: right;
+    animation: animapic 2s ease infinite;
+}
+.title2-picture img{
+    width: 100%;
+    margin-top: 200px;
+}
+
+/*
+Skills
+*/
+
+#skills{
+    height: 55vh;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.skill{
+    margin-top: 70px;
+}
+.title2{
+    width: 50%;
+    margin-left: 45%;
+}
+
+.title2 h4{
+   font-size: 43px;
+    width: 640px;
+    position: relative;
+    font-family: 'Merienda One', cursive;
+}
+li{
+    font-family: 'Merienda One', cursive;
+}
+
+
+
+/* Main Footer */
+footer .main-footer{	padding: 20px 0;	background: #252525;}
+footer ul{	padding-left: 0;	list-style: none;}
+
+/* Copy Right Footer */
+.footer-copyright {	background: #222;	padding: 5px 0;}
+.footer-copyright .logo {    display: inherit;}
+.footer-copyright nav {    float: right;    margin-top: 5px;}
+.footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
+.footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
+.footer-copyright nav ul li a{	color: #969696;}
+.footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
+.footer-copyright p {	color: #969696;	margin: 2px 0 0;}
+
+/* Footer Top */
+.footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
+
+/* Footer transparent */
+footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
+footer.transparent .footer-copyright{	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
+
+/* Footer light */
+footer.light .footer-top{	background: #f9f9f9;}
+footer.light .main-footer{	background: #f9f9f9;}
+footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
+
+/* Footer 4 */
+.footer- .logo {    display: inline-block;}
+
+/*==================== 
+	Widgets 
+====================== */
+.widget{	padding: 20px;	margin-bottom: 40px;}
+.widget.widget-last{	margin-bottom: 0px;}
+.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{	margin-bottom: 18px;}
+.widget li a{	color: #ff8d1e;}
+.widget li a:hover{	color: #4b92dc;}
+.widget-title {margin-bottom: 20px;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{	float: right;	background: #7f7f7f;}
+
+.typo-light h1, 
+.typo-light h2, 
+.typo-light h3, 
+.typo-light h4, 
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{	color: #fff; 
+    font-family: 'Merienda One', cursive;}
+
+ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
+ul.social-footer2 li {display: inline-block;padding: 0;}
+ul.social-footer2 li a:hover {background-color:#ff8d1e;}
+ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
+.btn{background-color: #ff8d1e; color:#fff;}
+.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-webkit-transition: all 250ms ease-in-out 0s;
+-moz-transition: all 250ms ease-in-out 0s;
+-ms-transition: all 250ms ease-in-out 0s;
+-o-transition: all 250ms ease-in-out 0s;
+transition: all 250ms ease-in-out 0s;
+
+}
+
+
+
+
+
+/*
+Projects Page
+*/
+
+
+#banner{
+    height: 30vh;
+    margin-top: 70px;
+}
+.projecttitle h2{
+    margin-top: 150px;
+    font-family: 'Merienda One', cursive;
+}
+
+.react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
+  
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
