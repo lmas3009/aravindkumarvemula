@@ -16,7 +16,7 @@ import timesch from '../images/time_schedule.jpg'
 import wifiinfo from '../images/wifiinfo.jpg'
 import uimusic from '../images/uimusic.png'
 import ui from '../images/uidesign.png'
-import youtube from '../images/yotube_clone.jpg'
+import youtube from '../images/youtube_clone.jpg'
 
 class Project extends React.Component{
 
