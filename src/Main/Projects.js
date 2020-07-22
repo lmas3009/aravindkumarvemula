@@ -16,6 +16,7 @@ import timesch from '../images/time_schedule.jpg'
 import wifiinfo from '../images/wifiinfo.jpg'
 import uimusic from '../images/uimusic.png'
 import ui from '../images/uidesign.png'
+import youtube from '../images/yotube_clone.jpg'
 
 class Project extends React.Component{
 
@@ -34,6 +35,20 @@ class Project extends React.Component{
                     <div className="album py-5 bg-light">
                         <div className="container">
                             <div className="row">
+                            <div className="col-md-4">
+                                <div className="card mb-4 box-shadow">
+                                <center><img className="card-img-top" style={{height: 225, width: '40%', display: 'block'}} src={youtube} data-holder-rendered="true" /></center>
+                                <div className="card-body">
+                                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                    <div className="btn-group">
+                                        <a href="https://github.com/lmas3009/Youtube_Clone" target="_blank"><button type="button" className="btn btn-sm btn-outline-secondary">Github</button></a>
+                                    </div>
+                                    <small className="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                             <div className="col-md-4">
                                 <div className="card mb-4 box-shadow">
                                 <center><img className="card-img-top" style={{height: 225, width: '40%', display: 'block'}} src={timesch} data-holder-rendered="true" /></center>
